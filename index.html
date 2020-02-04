@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flag Search</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="darkMode">
+    <div class="menuWrapper">
+        <div>
+            <span class="logo">Where in the world?</span>
+            <span class="dayMode" id="displayMode">Dark Mode</div>
+    </div>
+    </div>
+    <div class="overviewWrapper">
+        <div class="btn-close"><span>Close</span></div>
+        <div class="overviewGridWrapper">
+            <img class="flagImg" src="https://restcountries.eu/data/ata.svg">
+            <div class="countryInfos">
+                <div class="h1">Belgien</div>
+                <div class="infoCol">
+                    <div class="infoItem">
+                        <span class="text-bold">Native Name:</span>
+                        <span class="nativename"></span>
+                    </div>
+                    <div class="infoItem">
+                        <span class="text-bold">Population:</span>
+                        <span class="population"></span>
+                    </div>
+                    <div class="infoItem">
+                        <span class="text-bold">Region:</span>
+                        <span class="region"></span>
+                    </div>
+                    <div class="infoItem">
+                        <span class="text-bold">Sub Region:</span>
+                        <span class="subregion"></span>
+                    </div>
+                    <div class="infoItem">
+                        <span class="text-bold">Capital:</span>
+                        <span class="capital"></span>
+                    </div>
+                </div>
+                <div class="infoCol">
+                    <div class="infoItem">
+                        <span class="text-bold">Top Level Domain:</span>
+                        <span class="topLevelDomain"></span>
+                    </div>
+                    <div class="infoItem">
+                        <span class="text-bold">Currencies:</span>
+                        <span class="currencies"></span>
+                    </div>
+                    <div class="infoItem">
+                        <span class="text-bold">Languages:</span>
+                        <span class="languages"></span>
+                    </div>
+                </div>
+                <div class="infoItem borderBox">
+                    <span class="text-bold">Borders:</span>
+                    <span class="borders"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bodyWrapper">
+        <div class="inputFields">
+            <input type="text" placeholder="Search for a country...">
+            <select>
+                <option value="">Select Region</option>
+                <option value="africa">Africa</option>
+                <option value="america">America</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="oceania">Oceania</option>
+            </select>
+        </div>
+        <div class="gridWrapper"></div>
+    </div>
+</body>
+
+</html>
