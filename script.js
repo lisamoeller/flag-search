@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll("input");
+const input = document.querySelector("input");
 let myCountryObject;
 let myCountryArray;
 const countryOverview = document.querySelector(".overviewWrapper");
@@ -88,10 +88,10 @@ function showCountryOverview(){
 initalCoutryCall();
 
 let timeout;
-inputs.forEach(input => input.addEventListener('keyup', () => {
+input.addEventListener('keyup', () => {
     clearTimeout(timeout);
     timeout = setTimeout(getCountries, 500);
-}));
+});
 
 document.querySelector(".btn-close").addEventListener('click', () => {
   countryOverview.classList.remove('active');
